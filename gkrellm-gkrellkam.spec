@@ -1,14 +1,16 @@
 Summary:	Image watcher plugin
+Summary(pl):	Wtyczka do ¶ledzenia obrazków
 Name:		gkrellm-gkrellkam
 Version:	0.3.4
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/gkrellkam/gkrellkam_%{version}.tar.gz
-Requires:	wget
+URL:		http://gkrellkam.sourceforge.net/
 BuildRequires:	gkrellm-devel
 BuildRequires:	gtk+-devel
 BuildRequires:	imlib-devel
+Requires:	wget
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -19,8 +21,15 @@ You can have a periodically updated image of whatever you want, albeit
 squeezed into a little gkrellm panel. Each panel can watch a single
 image, or cycle through a list of images, or run a script and use the
 output of the script as the filename of an image. GKrellKam even knows
-how to get images out on the internet- this is what allows you to
+how to get images out on the Internet - this is what allows you to
 watch webcams.
+
+%description -l pl
+GKrellKam pozwala okresowo uaktualniaæ dowolny obrazek umieszczony w
+ma³ym panelu gkrellma. Ka¿dy panel mo¿e ¶ledziæ pojedynczy obrazek lub
+cyklicznie prze³±czaæ listê obrazków, albo urucomiæ skrypt i u¿ywaæ
+jego wyj¶cia jako nazwy obrazka. GKrellKam potrafi nawet ¶ci±gaæ
+obrazki z Internetu, pozwalaj±c na ¶ledzenie kamer internetowych.
 
 %prep
 %setup -q -n gkrellkam-%{version}
