@@ -2,7 +2,7 @@ Summary:	Image watcher plugin
 Summary(pl):	Wtyczka do ¶ledzenia obrazków
 Name:		gkrellm-gkrellkam
 Version:	2.0.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/gkrellkam/gkrellkam_%{version}.tar.gz
@@ -35,9 +35,9 @@ obrazki z Internetu, pozwalaj±c na ¶ledzenie kamer internetowych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_libdir}/gkrellm2,%{_mandir}/man5}
+install -d $RPM_BUILD_ROOT{%{_libdir}/gkrellm2/plugins,%{_mandir}/man5}
 
-install gkrellkam2.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2
+install gkrellkam2.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2/plugins
 install gkrellkam-list.5 $RPM_BUILD_ROOT%{_mandir}/man5
 
 %clean
@@ -46,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changelog README Todo example.list
-%attr(755,root,root) %{_libdir}/gkrellm2/gkrellkam2.so
+%attr(755,root,root) %{_libdir}/gkrellm2/plugins/gkrellkam2.so
 %{_mandir}/man5/*
