@@ -1,15 +1,14 @@
 Summary:	Image watcher plugin
 Summary(pl):	Wtyczka do ¶ledzenia obrazków
 Name:		gkrellm-gkrellkam
-Version:	0.3.4
-Release:	2
+Version:	2.0.0
+Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/gkrellkam/gkrellkam_%{version}.tar.gz
 URL:		http://gkrellkam.sourceforge.net/
-BuildRequires:	gkrellm-devel
-BuildRequires:	gtk+-devel
-BuildRequires:	imlib-devel
+BuildRequires:	gkrellm-devel >= 2.0.0
+BuildRequires:	gtk+2-devel
 Requires:	wget
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -35,16 +34,13 @@ obrazki z Internetu, pozwalaj±c na ¶ledzenie kamer internetowych.
 %setup -q -n gkrellkam-%{version}
 
 %build
-%{__make} \
-	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} -fPIC `gtk-config --cflags` `imlib-config --cflags-gdk` -I/usr/X11R6/include/gkrellm" \
-	LDFLAGS="%{rpmldflags} -shared -Wl"
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_libdir}/gkrellm,%{_mandir}/man5}
+install -d $RPM_BUILD_ROOT{%{_libdir}/gkrellm2,%{_mandir}/man5}
 
-install gkrellkam.so $RPM_BUILD_ROOT%{_libdir}/gkrellm
+install gkrellkam2.so $RPM_BUILD_ROOT%{_libdir}/gkrellm2
 install gkrellkam-list.5 $RPM_BUILD_ROOT%{_mandir}/man5
 
 %clean
@@ -53,5 +49,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changelog README Todo example.list
-%attr(755,root,root) %{_libdir}/gkrellm/gkrellkam.so
+%attr(755,root,root) %{_libdir}/gkrellm2/gkrellkam2.so
 %{_mandir}/man5/*
