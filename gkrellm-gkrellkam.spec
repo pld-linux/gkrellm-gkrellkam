@@ -5,7 +5,7 @@ Version:	2.0.0
 Release:	3
 License:	GPL
 Group:		X11/Applications
-Source0:	http://telia.dl.sourceforge.net/sourceforge/gkrellkam/gkrellkam_%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/sourceforge/%{name}/gkrellkam_%{version}.tar.gz
 # Source0-md5:	657c99de172bc7598098a6a4196ff07b
 URL:		http://gkrellkam.sourceforge.net/
 BuildRequires:	gkrellm-devel >= 2.0.0
