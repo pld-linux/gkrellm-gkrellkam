@@ -2,7 +2,7 @@ Summary:	Image watcher plugin
 Summary(pl):	Wtyczka do ¶ledzenia obrazków
 Name:		gkrellm-gkrellkam
 Version:	2.0.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://telia.dl.sourceforge.net/sourceforge/gkrellkam/gkrellkam_%{version}.tar.gz
@@ -11,9 +11,6 @@ BuildRequires:	gkrellm-devel >= 2.0.0
 BuildRequires:	gtk+2-devel
 Requires:	wget
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
 
 %description
 You can have a periodically updated image of whatever you want, albeit
