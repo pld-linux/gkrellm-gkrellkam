@@ -10,6 +10,7 @@ Source0:	http://dl.sourceforge.net/sourceforge/%{name}/gkrellkam_%{version}.tar.
 URL:		http://gkrellkam.sourceforge.net/
 BuildRequires:	gkrellm-devel >= 2.0.0
 BuildRequires:	gtk+2-devel
+BuildRequires:	pkgconfig
 Requires:	wget
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
