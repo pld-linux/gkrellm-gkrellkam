@@ -24,7 +24,7 @@ watch webcams.
 %description -l pl
 GKrellKam pozwala okresowo uaktualniaæ dowolny obrazek umieszczony w
 ma³ym panelu gkrellma. Ka¿dy panel mo¿e ¶ledziæ pojedynczy obrazek lub
-cyklicznie prze³±czaæ listê obrazków, albo urucomiæ skrypt i u¿ywaæ
+cyklicznie prze³±czaæ listê obrazków, albo uruchomiæ skrypt i u¿ywaæ
 jego wyj¶cia jako nazwy obrazka. GKrellKam potrafi nawet ¶ci±gaæ
 obrazki z Internetu, pozwalaj±c na ¶ledzenie kamer internetowych.
 
