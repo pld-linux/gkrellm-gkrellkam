@@ -1,5 +1,5 @@
 Summary:	Image watcher plugin
-Summary(pl):	Wtyczka do ¶ledzenia obrazków
+Summary(pl.UTF-8):   Wtyczka do Å›ledzenia obrazkÃ³w
 Name:		gkrellm-gkrellkam
 Version:	2.0.0
 Release:	3
@@ -22,12 +22,12 @@ output of the script as the filename of an image. GKrellKam even knows
 how to get images out on the Internet - this is what allows you to
 watch webcams.
 
-%description -l pl
-GKrellKam pozwala okresowo uaktualniaæ dowolny obrazek umieszczony w
-ma³ym panelu gkrellma. Ka¿dy panel mo¿e ¶ledziæ pojedynczy obrazek lub
-cyklicznie prze³±czaæ listê obrazków, albo uruchomiæ skrypt i u¿ywaæ
-jego wyj¶cia jako nazwy obrazka. GKrellKam potrafi nawet ¶ci±gaæ
-obrazki z Internetu, pozwalaj±c na ¶ledzenie kamer internetowych.
+%description -l pl.UTF-8
+GKrellKam pozwala okresowo uaktualniaÄ‡ dowolny obrazek umieszczony w
+maÅ‚ym panelu gkrellma. KaÅ¼dy panel moÅ¼e Å›ledziÄ‡ pojedynczy obrazek lub
+cyklicznie przeÅ‚Ä…czaÄ‡ listÄ™ obrazkÃ³w, albo uruchomiÄ‡ skrypt i uÅ¼ywaÄ‡
+jego wyjÅ›cia jako nazwy obrazka. GKrellKam potrafi nawet Å›ciÄ…gaÄ‡
+obrazki z Internetu, pozwalajÄ…c na Å›ledzenie kamer internetowych.
 
 %prep
 %setup -q -n gkrellkam-%{version}
