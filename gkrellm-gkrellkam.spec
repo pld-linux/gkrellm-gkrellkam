@@ -1,5 +1,5 @@
 Summary:	Image watcher plugin
-Summary(pl.UTF-8):   Wtyczka do śledzenia obrazków
+Summary(pl.UTF-8):	Wtyczka do śledzenia obrazków
 Name:		gkrellm-gkrellkam
 Version:	2.0.0
 Release:	3
